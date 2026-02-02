@@ -1,0 +1,21 @@
+"LiftID","Lake","Agency","Location","Latitude","Longitude","MU","Grid","Year","Month","Day","SurveyType","SurveyDescription","Gear","Nights","NetMaterial","MinMeshmm","MaxMeshmm","Depth1m","Depth2m","AvgDepthm","BottomTempC","SurfaceTempC","Comments"
+"OMNR_LOA_SC25_TC2_1007","Ontario","OMNR","IB",43.950651,-78.292155,NA,NA,2025,10,15,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Changed PERSONS, ANGLERS, & RODS to 1 from >1 due to error"
+"OMNR_LOA_SC25_TC2_1011","Ontario","OMNR","IB",43.952646,-78.293645,NA,NA,2025,10,15,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_1031","Ontario","OMNR","IB",43.950423,-78.292327,NA,NA,2025,10,18,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_1058","Ontario","OMNR","IB",43.949662,-78.291991,NA,NA,2025,10,19,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Changed PERSONS, ANGLERS, & RODS to 1 from >1 due to error"
+"OMNR_LOA_SC25_TC2_1081","Ontario","OMNR","IB",43.965704,-78.295579,NA,NA,2025,10,20,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Changed PERSONS, ANGLERS, & RODS to 1 from >1 due to error"
+"OMNR_LOA_SC25_TC2_1092","Ontario","OMNR","IB",43.951191,-78.292373,NA,NA,2025,10,24,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_1097","Ontario","OMNR","IA",43.945149,-78.291251,NA,NA,2025,10,24,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_111","Ontario","OMNR","IB",43.954268,-78.295163,NA,NA,2025,10,20,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5050 fishing experience"
+"OMNR_LOA_SC25_TC2_1140","Ontario","OMNR","IB",43.949363,-78.292123,NA,NA,2025,10,27,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_1226","Ontario","OMNR","IB",43.950389,-78.292279,NA,NA,2025,11,8,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_1257","Ontario","OMNR","IB",43.950608,-78.292348,NA,NA,2025,11,14,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_142","Ontario","OMNR","IA",43.944504,-78.291227,NA,NA,2025,10,24,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_153","Ontario","OMNR","IB",43.963552,-78.296361,NA,NA,2025,10,25,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_195","Ontario","OMNR","IB",43.95012,-78.292099,NA,NA,2025,10,26,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Changed ANGOP5_2 from Ardene to Arden"
+"OMNR_LOA_SC25_TC2_2","Ontario","OMNR","IA",43.944651,-78.291199,NA,NA,2025,10,15,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Bomanville, cobourg creek fishing"
+"OMNR_LOA_SC25_TC2_211","Ontario","OMNR","IB",43.963964,-78.296462,NA,NA,2025,10,27,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Really likes the abiltiy to fish, wishes people woukd catch ans release. Wants vatcg and release"
+"OMNR_LOA_SC25_TC2_22","Ontario","OMNR","IB",43.952669,-78.293653,NA,NA,2025,10,15,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_312","Ontario","OMNR","IB",43.950576,-78.2924,NA,NA,2025,11,5,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Adjusted DATE from Nov 12 to Nov 05"
+"OMNR_LOA_SC25_TC2_531","Ontario","OMNR","IB",43.949888,-78.291949,NA,NA,2025,11,26,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"OMNR_LOA_SC25_TC2_64","Ontario","OMNR","IB",43.955064,-78.295531,NA,NA,2025,10,19,"Angler Survey","Angler Survey",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

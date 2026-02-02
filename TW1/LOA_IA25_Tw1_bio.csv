@@ -1,0 +1,274 @@
+"FishID","LiftID","Lake","Agency","SpeciesName","SpeciesNumber","SpeciesAbbrev","MeshSizemm","Length(mm)","Weight(g)","R/D","Age","AgeStructure","SexAgency","MaturityAgency","FinClipAgency","CWTAgency","A1-A3","A1","A2","A3","A4","B1","B2","B3","B4"
+"OMNR_LOA_IA25_TW1_1_317_1","OMNR_LOA_IA25_TW1_1","Ontario","OMNR","Largemouth bass",317,"",1,57,2.2,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_1_334_1","OMNR_LOA_IA25_TW1_1","Ontario","OMNR","Walleye",334,"",1,117,12.83,"D","","2","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_1_334_2","OMNR_LOA_IA25_TW1_1","Ontario","OMNR","Walleye",334,"",1,101,7.79,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_1_334_3","OMNR_LOA_IA25_TW1_1","Ontario","OMNR","Walleye",334,"",1,98,8.24,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_1_334_4","OMNR_LOA_IA25_TW1_1","Ontario","OMNR","Walleye",334,"",1,93,5.62,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_1_334_5","OMNR_LOA_IA25_TW1_1","Ontario","OMNR","Walleye",334,"",1,100,7.95,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_1_334_6","OMNR_LOA_IA25_TW1_1","Ontario","OMNR","Walleye",334,"",1,80,3.78,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_16_317_1","OMNR_LOA_IA25_TW1_16","Ontario","OMNR","Largemouth bass",317,"",1,56,1.83,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_16_334_1","OMNR_LOA_IA25_TW1_16","Ontario","OMNR","Walleye",334,"",1,137,19.03,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_16_334_2","OMNR_LOA_IA25_TW1_16","Ontario","OMNR","Walleye",334,"",1,128,13.99,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_16_334_3","OMNR_LOA_IA25_TW1_16","Ontario","OMNR","Walleye",334,"",1,135,20.15,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_16_334_4","OMNR_LOA_IA25_TW1_16","Ontario","OMNR","Walleye",334,"",1,131,16.99,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_16_334_5","OMNR_LOA_IA25_TW1_16","Ontario","OMNR","Walleye",334,"",1,123,14.03,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_16_334_6","OMNR_LOA_IA25_TW1_16","Ontario","OMNR","Walleye",334,"",1,140,20.16,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_1","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,75,5.25,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_10","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,131,32.04,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_11","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,100,12.66,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_12","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,59,2.22,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_13","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,66,3.21,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_14","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,69,2.94,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_15","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,69,4.06,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_16","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,62,3.03,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_17","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,65,2.68,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_18","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,81,6.44,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_19","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,68,4.04,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_2","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,99,11.29,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_20","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,67,3.51,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_21","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,75,5.15,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_22","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,73,4.77,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_23","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,72,4.55,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_24","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,96,12.66,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_25","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,102,16.35,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_26","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,81,6.5,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_27","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,81,6.68,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_28","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,88,9.17,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_29","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,92,8.26,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_3","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,103,14.01,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_30","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,107,16.11,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_31","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,100,12.29,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_32","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,83,6.73,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_33","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,84,7.07,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_34","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,91,9.19,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_35","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,80,6.99,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_36","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,95,11.67,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_37","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,93,9.73,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_38","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,92,10.76,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_4","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,103,15.28,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_5","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,72,4.25,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_6","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,89,8.85,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_7","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,75,5.38,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_8","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,98,12.02,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_317_9","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Largemouth bass",317,"",1,116,22.4,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_334_1","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Walleye",334,"",1,144,21.99,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_334_2","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Walleye",334,"",1,143,20.31,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_334_3","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Walleye",334,"",1,122,13.06,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_17_334_4","OMNR_LOA_IA25_TW1_17","Ontario","OMNR","Walleye",334,"",1,144,21.49,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_317_1","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Largemouth bass",317,"",1,88,7.38,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_317_2","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Largemouth bass",317,"",1,93,9.48,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_317_3","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Largemouth bass",317,"",1,102,13.6,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_317_4","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Largemouth bass",317,"",1,107,14.49,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_317_5","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Largemouth bass",317,"",1,102,14.22,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_317_6","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Largemouth bass",317,"",1,95,10.55,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_334_1","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Walleye",334,"",1,261,152.11,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_334_2","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Walleye",334,"",1,135,19.66,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_334_3","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Walleye",334,"",1,140,22.64,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_334_4","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Walleye",334,"",1,245,123.31,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_334_5","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Walleye",334,"",1,244,116.21,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_334_6","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Walleye",334,"",1,470,951.79,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_18_334_7","OMNR_LOA_IA25_TW1_18","Ontario","OMNR","Walleye",334,"",1,469,1034.46,"D","","2A","F","2","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_19_334_1","OMNR_LOA_IA25_TW1_19","Ontario","OMNR","Walleye",334,"",1,142,23.8,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_316_1","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Smallmouth bass",316,"",1,57,2.11,"D","","2","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_1","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,55,2.17,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_10","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,67,4.04,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_11","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,62,2.86,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_12","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,61,2.8,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_13","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,64,3.38,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_14","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,65,3.4,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_15","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,70,4.41,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_16","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,66,3.87,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_17","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,75,4.95,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_2","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,67,3.52,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_3","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,65,3.3,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_4","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,57,2.22,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_5","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,55,2.48,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_6","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,52,1.63,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_7","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,55,1.88,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_8","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,51,1.46,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_317_9","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Largemouth bass",317,"",1,62,2.92,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_334_1","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Walleye",334,"",1,213,80.23,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_2_334_2","OMNR_LOA_IA25_TW1_2","Ontario","OMNR","Walleye",334,"",1,232,100.9,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_1","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,421,655.3,"D","","2A","M","2","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_2","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,132,17.03,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_3","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,130,16.42,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_4","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,127,16.04,"D","","2A","M","2","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_5","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,134,17.33,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_6","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,133,18.63,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_7","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,123,11.59,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_8","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,119,11.8,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_20_334_9","OMNR_LOA_IA25_TW1_20","Ontario","OMNR","Walleye",334,"",1,138,18.75,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_075_1","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Chinook salmon",75,"",1,136,22.23,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_081_1","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake trout",81,"",1,183,37.92,"D","","2A","M","1","2","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_081_2","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake trout",81,"",1,179,30.06,"D","","2A","F","1","2","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_081_3","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake trout",81,"",1,157,23.82,"D","","2A","M","1","2","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_081_4","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake trout",81,"",1,164,24.24,"D","","2A","F","1","2","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_091_1","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake whitefish",91,"",1,104,6.61,"D","","2A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_091_2","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake whitefish",91,"",1,161,25.86,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_093_1","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake herring",93,"",1,98,5.62,"D","","2A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_093_2","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake herring",93,"",1,99,6.39,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_093_3","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake herring",93,"",1,109,8.31,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_093_4","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake herring",93,"",1,102,6.38,"D","","2A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_093_5","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake herring",93,"",1,97,6.08,"D","","2A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_093_6","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake herring",93,"",1,215,66.34,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_093_7","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Lake herring",93,"",1,213,63.57,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_21_334_1","OMNR_LOA_IA25_TW1_21","Ontario","OMNR","Walleye",334,"",1,386,469.48,"D","","2A","F","2","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_317_1","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Largemouth bass",317,"",1,56,1.78,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_1","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,227,91.57,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_10","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,110,10.1,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_11","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,109,9.4,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_12","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,106,8.13,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_13","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,107,9.12,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_14","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,107,7.99,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_15","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,105,8.31,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_16","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,100,7.2,"D","","2A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_17","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,100,6.81,"D","","2A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_18","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,98,7.18,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_19","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,100,6.94,"D","","2A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_2","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,207,69.75,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_20","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,95,6.11,"D","","2A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_21","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,100,7.73,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_22","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,100,7.33,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_3","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,109,9.65,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_4","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,112,9.61,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_5","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,117,11.63,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_6","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,114,10.37,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_7","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,114,10.16,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_8","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,117,12.58,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_23_334_9","OMNR_LOA_IA25_TW1_23","Ontario","OMNR","Walleye",334,"",1,114,11.38,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_1","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,54,1.04,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_10","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,59,2.19,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_11","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,47,0.98,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_12","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,60,2.6,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_2","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,55,1.87,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_3","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,56,1.96,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_4","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,57,1.93,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_5","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,57,2.05,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_6","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,54,1.6,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_7","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,54,1.79,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_8","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,53,1.52,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_317_9","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Largemouth bass",317,"",1,48,1.25,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_1","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,111,10.38,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_10","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,79,3.69,"D","","2A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_11","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,239,112.33,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_12","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,269,152.71,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_13","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,222,78.76,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_2","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,115,13.48,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_3","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,119,11.63,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_4","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,112,9.75,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_5","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,98,7.81,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_6","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,106,7.31,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_7","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,115,10.11,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_8","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,113,9.51,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_24_334_9","OMNR_LOA_IA25_TW1_24","Ontario","OMNR","Walleye",334,"",1,98,6.59,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_1","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,70,4.08,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_10","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,48,1.18,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_11","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,53,1.34,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_12","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,45,0.94,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_13","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,53,1.45,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_14","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,56,1.69,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_15","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,52,1.12,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_16","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,56,1.81,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_17","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,52,1.17,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_18","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,46,1.24,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_19","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,58,1.85,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_2","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,73,3.74,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_20","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,61,2.16,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_21","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,53,1.43,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_22","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,58,1.98,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_23","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,58,2.21,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_24","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,56,1.73,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_25","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,57,1.76,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_26","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,63,2.2,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_27","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,59,1.92,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_28","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,61,2.29,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_29","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,57,2.25,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_3","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,76,5.02,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_30","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,56,1.56,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_31","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,56,1.7,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_32","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,60,2.26,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_33","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,57,2.02,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_34","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,64,3.17,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_35","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,60,2.31,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_36","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,61,2.03,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_37","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,52,1.51,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_38","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,55,1.43,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_39","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,57,2.14,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_4","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,78,5.25,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_40","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,55,1.71,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_41","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,56,2.3,"D","",NA,"F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_42","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,59,2.54,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_43","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,62,2.53,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_44","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,58,2.29,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_45","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,68,2.88,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_46","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,63,2.65,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_47","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,63,2.86,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_48","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,63,2.52,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_49","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,66,3.33,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_5","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,70,3.47,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_50","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,64,2.95,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_51","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,61,2.41,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_52","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,67,3.61,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_53","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,67,3.35,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_54","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,57,2.38,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_55","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,66,3.21,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_56","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,49,1.131,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_57","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,70,4.02,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_58","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,68,3.79,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_59","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,61,2.56,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_6","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,56,1.61,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_60","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,63,2.77,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_61","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,66,3.43,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_62","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,65,3.33,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_63","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,75,4.7,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_64","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,70,4.35,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_65","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,73,4.58,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_66","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,69,3.88,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_67","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,78,5.49,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_7","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,52,1.35,"D","","2","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_8","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,57,1.83,"D","","2","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_317_9","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Largemouth bass",317,"",1,49,1.24,"D","","2","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_1","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,104,8.01,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_10","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,226,106.12,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_11","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,365,380.3,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_2","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,120,12.12,"D","","A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_3","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,111,10.08,"D","","2A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_4","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,106,8.48,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_5","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,112,10.85,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_6","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,105,8.32,"D","","2A","F","9","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_7","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,124,13.67,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_8","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,226,85.22,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_25_334_9","OMNR_LOA_IA25_TW1_25","Ontario","OMNR","Walleye",334,"",1,157,NA,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_26_334_1","OMNR_LOA_IA25_TW1_26","Ontario","OMNR","Walleye",334,"",1,118,14.67,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_26_334_2","OMNR_LOA_IA25_TW1_26","Ontario","OMNR","Walleye",334,"",1,121,13.68,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_26_334_3","OMNR_LOA_IA25_TW1_26","Ontario","OMNR","Walleye",334,"",1,111,10.01,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_26_334_4","OMNR_LOA_IA25_TW1_26","Ontario","OMNR","Walleye",334,"",1,112,10.19,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_26_334_5","OMNR_LOA_IA25_TW1_26","Ontario","OMNR","Walleye",334,"",1,520,1312.91,"D","","2A","F","2","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_27_334_1","OMNR_LOA_IA25_TW1_27","Ontario","OMNR","Walleye",334,"",1,238,94.82,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_27_334_2","OMNR_LOA_IA25_TW1_27","Ontario","OMNR","Walleye",334,"",1,206,63.93,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_081_1","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake trout",81,"",1,182,48.97,"D","","2A","M","1","4","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_091_1","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake whitefish",91,"",1,93,5.01,"D","","A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_091_2","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake whitefish",91,"",1,80,3.48,"D","","A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_091_3","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake whitefish",91,"",1,96,5.88,"D","","A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_091_4","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake whitefish",91,"",1,92,5.21,"D","","A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_093_1","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake herring",93,"",1,194,56.77,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_093_2","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake herring",93,"",1,205,58.38,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_28_093_3","OMNR_LOA_IA25_TW1_28","Ontario","OMNR","Lake herring",93,"",1,92,5.42,"D","","A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_3_334_1","OMNR_LOA_IA25_TW1_3","Ontario","OMNR","Walleye",334,"",1,119,12.48,"D","","2A","F","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_30_091_1","OMNR_LOA_IA25_TW1_30","Ontario","OMNR","Lake whitefish",91,"",1,216,81.7,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_30_091_2","OMNR_LOA_IA25_TW1_30","Ontario","OMNR","Lake whitefish",91,"",1,132,15.17,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_30_093_1","OMNR_LOA_IA25_TW1_30","Ontario","OMNR","Lake herring",93,"",1,114,9.64,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_1","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,233,101.09,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_2","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,220,79.71,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_3","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,195,55.87,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_4","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,128,15.84,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_5","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,136,15.5,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_6","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,135,15.6,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_7","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,115,9.57,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_8","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,116,9.93,"D","","2A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_31_091_9","OMNR_LOA_IA25_TW1_31","Ontario","OMNR","Lake whitefish",91,"",1,111,8.77,"D","","2A","M","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_33_091_1","OMNR_LOA_IA25_TW1_33","Ontario","OMNR","Lake whitefish",91,"",1,117,10.41,"D","","2A","F","9",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_5_334_1","OMNR_LOA_IA25_TW1_5","Ontario","OMNR","Walleye",334,"",1,109,9.4,"D","","2A","M","1","0","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_6_091_1","OMNR_LOA_IA25_TW1_6","Ontario","OMNR","Lake whitefish",91,"",1,160,22.17,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_7_081_1","OMNR_LOA_IA25_TW1_7","Ontario","OMNR","Lake trout",81,"",1,217,92.82,"D","","2A","M","1","2","",0,0,0,0,0,0,0,0,0
+"OMNR_LOA_IA25_TW1_7_091_1","OMNR_LOA_IA25_TW1_7","Ontario","OMNR","Lake whitefish",91,"",1,90,4.22,"D","","2A","F","1",NA,"",0,0,0,0,0,0,0,0,0

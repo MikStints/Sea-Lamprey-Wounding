@@ -1,0 +1,16 @@
+"LiftID","Lake","Agency","Location","Latitude","Longitude","MU","Grid","Year","Month","Day","SurveyType","SurveyDescription","Gear","Nights","NetMaterial","MinMeshmm","MaxMeshmm","Depth1m","Depth2m","AvgDepthm","BottomTempC","SurfaceTempC","Comments"
+"OMNR_LOA_IA25_TW4_1","Ontario","OMNR","2104",44.0433883333333,-77.0158916666667,NA,NA,2025,3,26,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,24.44,26.59,NA,2.8,3.2,NA
+"OMNR_LOA_IA25_TW4_30","Ontario","OMNR","2035",43.7356,-78.7368166666667,NA,NA,2025,4,9,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,87.87,88.53,NA,2.9,3.3,NA
+"OMNR_LOA_IA25_TW4_41","Ontario","OMNR","2104",44.0451416666667,-77.0095616666667,NA,NA,2025,4,15,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,24.09,24.99,NA,4.1,6,"HAD TO MANUALLY FILL"
+"OMNR_LOA_IA25_TW4_42","Ontario","OMNR","2004",44.0492,-77.0286033333333,NA,NA,2025,4,15,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,15.88,16.51,NA,4.9,6.1,NA
+"OMNR_LOA_IA25_TW4_43","Ontario","OMNR","2002",44.0504233333333,-77.0917133333333,NA,NA,2025,4,15,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,10.15,10.79,NA,6,6.3,NA
+"OMNR_LOA_IA25_TW4_46","Ontario","OMNR","2102",44.0674283333333,-76.9504816666667,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,34.56,35.46,NA,4.5,5.2,NA
+"OMNR_LOA_IA25_TW4_47","Ontario","OMNR","2008",44.080875,-76.9177083333333,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,41.58,44.01,NA,4.9,5.3,NA
+"OMNR_LOA_IA25_TW4_48","Ontario","OMNR","2009",44.1116366666667,-76.8711366666667,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,48.33,49.4,NA,4,4.7,NA
+"OMNR_LOA_IA25_TW4_49","Ontario","OMNR","2006",44.1071116666667,-76.867265,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,20.92,21.41,NA,5.2,5.5,NA
+"OMNR_LOA_IA25_TW4_50","Ontario","OMNR","2105",44.1593883333333,-76.7733,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,30.48,31.14,NA,3.5,3.9,NA
+"OMNR_LOA_IA25_TW4_51","Ontario","OMNR","2007",44.1142866666667,-76.8918433333333,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,28.15,28.8,NA,4.1,4.6,NA
+"OMNR_LOA_IA25_TW4_52","Ontario","OMNR","2005",44.1064433333333,-76.908325,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,20.65,21.32,NA,4.4,4.8,NA
+"OMNR_LOA_IA25_TW4_53","Ontario","OMNR","2106",44.1062833333333,-76.9078,NA,NA,2025,4,16,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,20.83,21.44,NA,4.3,4.8,NA
+"OMNR_LOA_IA25_TW4_54","Ontario","OMNR","2066",43.8278416666667,-76.854045,NA,NA,2025,4,23,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,59.07,59.39,NA,4,4.7,NA
+"OMNR_LOA_IA25_TW4_67","Ontario","OMNR","2080",44.0171533333333,-76.5910883333333,NA,NA,2025,4,24,"Fish Community Assessment","Fish Community Assessment","Trawl",NA,"M",12.7,101.6,33.16,33.22,NA,3.8,4.5,NA

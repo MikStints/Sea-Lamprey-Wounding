@@ -1,7 +1,26 @@
+#####################################################################################
+#####################################################################################
+##**                          Lamprey data request                               **##
+##**                             February 2025                                   **##
+##**            Mikayla Stinson, original codes from McKayla Jarvie              **##
+#####################################################################################
+#####################################################################################
 
-#Lamprey data request 
-#February 2025
-#Mikayla Stinson, original codes from McKayla Jarvie
+#In the past there were issues with duplicates due to the tag tables. There were no 
+#    tags recorded in 2025 so I didn't run into this issue. If tags are present for
+#    2026 programs then this is something to be aware of. This occurs because of the
+#    way fn125 table is merged with the fn125_tags table. May be able to work this 
+#    out within the code or may have to manually check the excel export. 
+
+
+#You'll have to adjust the code to remove/add projects for 2026. 
+
+
+#####################################################################################
+#####################################################################################
+##**                           Packages to Load                                  **##
+#####################################################################################
+#####################################################################################
 
 # Install the development version from GitHub
 # 1) Base data tools
@@ -28,16 +47,12 @@ library(tidyr)
 library(writexl)
 
 
-################### add code before completing 2025 export to check for duplicates when several tags are recorded on a single fish?
-#occurs because of the way fn125 table is merged with fn125_tags table
-#or just check manually after csv is saved?
-
-#also add/update code to remove duplicates in the individual OR final gear table(s) - or do manually after csv is saved?
-
-#adjust code to remove projects not completed in 2025/add new projects
-
-
-############################# FLEN to TLEN conversions ################################################################################################
+#
+#####################################################################################
+#####################################################################################
+##**                         FLEN to TLEN conversions                            **##
+#####################################################################################
+#####################################################################################
 #see if lko coefficients are different from whole lake attributes
 
 #whole lake
@@ -90,21 +105,28 @@ estimate_tlen2 <- function(GL1na_rows, results) {
   GL1na_rows <- GL1na_rows[, !names(GL1na_rows) %in% c("FLEN2TLEN_ALPHA_LKO", "FLEN2TLEN_BETA_LKO")]
   return(GL1na_rows)
 }
-##################### GL1 ####################################################################
-#pull in from glis
+
+
+#
+#####################################################################################
+#####################################################################################
+##**                                  GL1                                        **##
+#####################################################################################
+#####################################################################################
+
+#pull in from GLIS
 Lamprey <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_GL1")))
 fn121 <- get_FN121(list(prj_cd=c("LOA_IA25_GL1")))
 fn122 <- get_FN122(list(prj_cd=c("LOA_IA25_GL1")))
 fn125 <- get_FN125(list(prj_cd=c("LOA_IA25_GL1")))
-fn125tags <- get_FN125_Tags(list(prj_cd=c("LOA_IA25_GL1"))) #empty
+fn125tags <- get_FN125_Tags(list(prj_cd=c("LOA_IA25_GL1"))) ##no tags recorded for 2025
 fn026 = get_FN026_Subspace(list(prj_cd=c("LOA_IA25_GL1"))) #to pull location reference
-##no tags recorded for 2025
 
 
-#this pulls out the rows with NA values in TLEN
+#Rows with NA values in TLEN
 GL1na_rows = fn125[is.na(fn125$TLEN),]
 
-#this completely removes the NA values in TLEN 
+#Completely remove the NA values from the data set
 fn125_noNA = fn125 %>%
   filter(!is.na(TLEN))
 
@@ -113,11 +135,11 @@ fn125.convert3 = estimate_tlen2(GL1na_rows, results)
 
 #rbind the converted table with the larger data set
 updated_fn125 = bind_rows(fn125_noNA, fn125.convert3)
-##there are two rows that still have NA because there was no FLEN to convert (2025)
+##there will occasionally be rows that still have NAs because they don't have a FLEN
 
 
 #biodataexport
-fn125.convert<-append.spc.names(updated_fn125) #if no conversion needed, this would just be fn125
+fn125.convert<-append.spc.names(updated_fn125) 
 
 #if there are tags then run the next line of code
 #fn125edit<-left_join(fn125.convert,fn125tags) #no tags present for 2025
@@ -155,7 +177,7 @@ biodataexport<-left_join(lampreyspread,fn125edit)%>%
 
 
 biodataexport$B1 = 0 #add these strings if there are no values for the given year
-biodataexport$B4 = 0 #we add these to create columns that aren't pulled from the first lampray table
+biodataexport$B4 = 0 #we add these to create columns that aren't pulled from the first lamprey table
 
 biodataexport1 = biodataexport%>%
   dplyr::select(FishID,
@@ -225,7 +247,13 @@ write.csv(fn026_GL1, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/GL1/
           row.names = FALSE)
   
 
-##################### TW1 - 2025 ########################################################################
+
+#####################################################################################
+#####################################################################################
+##**                                  TW1                                        **##
+#####################################################################################
+#####################################################################################
+
 #pull in from glis
 Lamprey_trawl <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_TW1")))
 fn121_trawl <- get_FN121(list(prj_cd=c("LOA_IA25_TW1")))
@@ -244,7 +272,20 @@ fn125_trawl <-append.spc.names(fn125_trawl)
 #run next code if there's any tags
 #fn125edit<-left_join(fn125,fn125tags)
 
-fn125edit<-fn125_trawl%>%dplyr::select(PRJ_CD,SAM,EFF,GRP,SPC,SPC_NM,FISH,TLEN,RWT,AGEST,SEX,MAT,CLIPC)#,TAGID)
+fn125edit<-fn125_trawl%>%
+  dplyr::select(PRJ_CD,
+                SAM,
+                EFF,
+                GRP,
+                SPC,
+                SPC_NM,
+                FISH,
+                TLEN,
+                RWT,
+                AGEST,
+                SEX,
+                MAT,
+                CLIPC)#,TAGID)
 
 lampreyspread<-Lamprey_trawl%>%
   group_by(PRJ_CD,SAM,SPC,EFF,GRP,FISH,LAMIJC_TYPE,COMMENT_LAM)%>%
@@ -274,13 +315,13 @@ biodataexport_trawl<-left_join(lampreyspread,fn125edit)%>%
 
 biodataexport_trawl$CWTAgency = ""
 biodataexport_trawl$A1 = 0 #add since there weren't occurrences this year
-biodataexport_trawl$A2 = 0 #add since there weren't occurrences this year
-biodataexport_trawl$A3 = 0 #add since there weren't occurrences this year
-biodataexport_trawl$A4 = 0 #add since there weren't occurrences this year
-biodataexport_trawl$B1 = 0 #add since there weren't occurrences this year
-biodataexport_trawl$B2 = 0 #add since there weren't occurrences this year
-biodataexport_trawl$B3 = 0 #add since there weren't occurrences this year
-biodataexport_trawl$B4 = 0 #add since there weren't occurrences this year
+biodataexport_trawl$A2 = 0 
+biodataexport_trawl$A3 = 0 
+biodataexport_trawl$A4 = 0 
+biodataexport_trawl$B1 = 0 
+biodataexport_trawl$B2 = 0 
+biodataexport_trawl$B3 = 0 
+biodataexport_trawl$B4 = 0 
 
 biodataexport_trawl2 = biodataexport_trawl%>%
   dplyr::select(FishID,
@@ -307,12 +348,12 @@ biodataexport_trawl2$MaturityAgency = recode(biodataexport_trawl2$MaturityAgency
                                        '2' = "M",
                                        '9' = "U")
 
-#write.csv(biodataexport2,"./data/exports/LOA_IA25_TW1_bio.csv")
+#write.csv
 write.csv(biodataexport_trawl2,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW1/LOA_IA25_Tw1_bio.csv", 
           row.names = FALSE)
 
 
-#now do "gear" table export
+#"gear" table export
 tem<-fn122_trawl%>%dplyr::select(PRJ_CD,EFF,SAM,GRTEM0)
 
 fn121_trawl<-left_join(fn121_trawl,tem)%>%dplyr::rename(BottomTempC=GRTEM0)
@@ -366,7 +407,7 @@ gearexport_trawl<-fn121_trawl%>%
                 SurfaceTempC=SITEM0,
                 Comments=COMMENT1)
 
-#write.csv(gearexport_trawl,"./data/exports/LOA_IA25_TW1_gear.csv")
+#write.csv
 write.csv(gearexport_trawl,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW1/LOA_IA25_Tw1_gear.csv", 
           row.names = FALSE)
 
@@ -379,7 +420,14 @@ fn026_trawl = fn026_trawl %>%
 write.csv(fn026_trawl, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW1/locations_TW1_2025.csv",
           row.names = FALSE)
 
-##################### NSH/NSW/NSE/NSA - 2025 ############################  ###########################################
+
+#
+#####################################################################################
+#####################################################################################
+##**                            NSH/NSW/NSE/NSA                                  **##
+#####################################################################################
+#####################################################################################
+
 #pull in from glis
 Lamprey_NSCIN <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_NSH","LOA_IA25_NSW","LOA_IA25_NSE","LOA_IA25_NSA")))
 fn121_NSCIN <- get_FN121(list(prj_cd=c("LOA_IA25_NSH","LOA_IA25_NSW","LOA_IA25_NSE","LOA_IA25_NSA")))
@@ -392,7 +440,7 @@ fn026_NSCIN = get_FN026_Subspace(list(prj_cd=c("LOA_IA25_NSH","LOA_IA25_NSW","LO
 NSCINna_rows = fn125_NSCIN[is.na(fn125_NSCIN$TLEN),]
 #multiple missing TLEN
 
-#this completely removes the NA values in TLEN 
+#Completely remove the NA values in TLEN 
 NSCIN_fn125_noNA = fn125_NSCIN %>%
   filter(!is.na(TLEN))
 
@@ -402,8 +450,6 @@ NSCIN_fn125.convert = estimate_tlen2(NSCINna_rows, results)
 
 #rbind the converted table with the larger data set
 NSCIN_updated_fn125 = bind_rows(NSCIN_fn125_noNA, NSCIN_fn125.convert)
-
-
 
 
 #biodataexport
@@ -443,14 +489,14 @@ biodataexport_NSCIN<-left_join(NSCIN_lampreyspread,NSCIN_fn125edit2)%>%
                 SexAgency=SEX,
                 "R/D" = FATE,
                 CWTAgency=TAGDOC,
-                Comments=COMMENT_LAM) #if no conversion, Length = TLEN
+                Comments=COMMENT_LAM) 
 
 biodataexport_NSCIN$A2 = 0 #add since there weren't occurrences this year
-biodataexport_NSCIN$A3 = 0 #add since there weren't occurrences this year
-biodataexport_NSCIN$A4 = 0 #add since there weren't occurrences this year
-biodataexport_NSCIN$B1 = 0 #add since there weren't occurrences this year
-biodataexport_NSCIN$B2 = 0 #add since there weren't occurrences this year
-biodataexport_NSCIN$B4 = 0 #add since there weren't occurrences this year
+biodataexport_NSCIN$A3 = 0 
+biodataexport_NSCIN$A4 = 0 
+biodataexport_NSCIN$B1 = 0 
+biodataexport_NSCIN$B2 = 0 
+biodataexport_NSCIN$B4 = 0 
 
 biodataexport_NSCIN_final = biodataexport_NSCIN%>%
   dplyr::select(FishID,
@@ -480,7 +526,7 @@ biodataexport_NSCIN_final$MaturityAgency = recode(biodataexport_NSCIN_final$Matu
 write.csv(biodataexport_NSCIN_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/NSCIN/LOA_IA25_NSH_NSW_NSE_NSA_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#"gear" table export
 tem2<-fn122_NSCIN%>%dplyr::select(PRJ_CD,EFF,SAM,GRTEM0)
 fn121_NSCIN<-left_join(fn121_NSCIN,tem2)%>%dplyr::rename(BottomTempC=GRTEM0)
 gearexport_NSCIN<-fn121_NSCIN%>%dplyr::filter(SAM%in%NSCIN_lampreyspread$SAM)%>%
@@ -533,7 +579,7 @@ gearexport_NSCIN<-fn121_NSCIN%>%dplyr::filter(SAM%in%NSCIN_lampreyspread$SAM)%>%
                 SurfaceTempC=SITEM1,
                 Comments=COMMENT1)
 
-#write.csv-gearexport_NSCIN
+#write.csv
 write.csv(gearexport_NSCIN,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/NSCIN/LOA_IA25_NSH_NSW_NSE_NSA_gear.csv", 
           row.names = FALSE)
 
@@ -546,7 +592,14 @@ fn026_NSCIN = fn026_NSCIN %>%
 write.csv(fn026_NSCIN, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/NSCIN/locations_NSCIN_2025.csv",
           row.names = FALSE)
 
-##################### TW2/TW4 - Still need fall trawl 2025 ############################ #############################################
+
+#
+#####################################################################################
+#####################################################################################
+##**                  TW2/TW4 - Still need fall trawl 2025                       **##
+#####################################################################################
+#####################################################################################
+
 #pull in from glis
 Lamprey_TW <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_TW2","LOA_IA25_TW4")))
 fn121_TW <- get_FN121(list(prj_cd=c("LOA_IA25_TW2","LOA_IA25_TW4")))
@@ -556,8 +609,10 @@ fn125tags_TW <- get_FN125_Tags(list(prj_cd=c("LOA_IA25_TW2","LOA_IA25_TW4"))) #e
 fn026_TW = get_FN026_Subspace(list(prj_cd=c("LOA_IA25_TW2","LOA_IA25_TW4"))) #to pull location reference
 
 
+
 #this pulls out the rows with NA values in TLEN
 TW_na_rows = fn125_TW[is.na(fn125_TW$TLEN),]
+#no NA values present
 
 #biodataexport
 fn125_TW<-append.spc.names(fn125_TW)
@@ -605,13 +660,13 @@ biodataexport_TW<-left_join(lampreyspread_TW,fn125_TW_edit)%>%
                 Comments=COMMENT_LAM)
 
 biodataexport_TW$A1 = 0 #add since there weren't occurrences this year
-biodataexport_TW$A2 = 0 #add since there weren't occurrences this year
-biodataexport_TW$A3 = 0 #add since there weren't occurrences this year
-biodataexport_TW$A4 = 0 #add since there weren't occurrences this year
-biodataexport_TW$B1 = 0 #add since there weren't occurrences this year
-biodataexport_TW$B2 = 0 #add since there weren't occurrences this year
-biodataexport_TW$B3 = 0 #add since there weren't occurrences this year
-biodataexport_TW$B4 = 0 #add since there weren't occurrences this year
+biodataexport_TW$A2 = 0 
+biodataexport_TW$A3 = 0 
+biodataexport_TW$A4 = 0 
+biodataexport_TW$B1 = 0 
+biodataexport_TW$B2 = 0 
+biodataexport_TW$B3 = 0 
+biodataexport_TW$B4 = 0 
 
 biodataexport_TW_final = biodataexport_TW%>%
   dplyr::select(FishID,
@@ -637,11 +692,11 @@ biodataexport_TW_final = biodataexport_TW%>%
   #                                                '2' = "M",
    #                                               '9' = "U")
 
-#write.csv(biodataexport_TW_final,"./data/TW2_TW4/LOA_IA25_TW2_TW4_bio.csv")
+#write.csv
 write.csv(biodataexport_TW_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW2_TW4/LOA_IA25_TW2_TW4_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#"gear" table export
 tem_TW<-fn122_TW%>%
   dplyr::select(PRJ_CD,EFF,SAM,GRTEM0)
 
@@ -710,7 +765,13 @@ fn026_TW = fn026_TW %>%
 write.csv(fn026_TW, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW2_TW4/locations_TW_2025.csv",
           row.names = FALSE)
 
-##################### TC2 - 2025 ############################  ##########################
+#
+#####################################################################################
+#####################################################################################
+##**                              TC2                                            **##
+#####################################################################################
+#####################################################################################
+
 #pull in from glis
 Lamprey_TC <- get_SC125_Lamprey(list(prj_cd=c("LOA_SC25_TC2")))
 fn121_TC <- get_SC121(list(prj_cd=c("LOA_SC25_TC2")))
@@ -720,7 +781,7 @@ fn026_TC = get_SC026_Subspace(list(prj_cd=c("LOA_SC25_TC2")))
 
 #this pulls out the rows with NA values in TLEN
 TC_na_rows = fn125_TC[is.na(fn125_TC$TLEN),]
-
+#no NA values present
 
 #biodataexport
 fn125_TC<-append.spc.names(fn125_TC)
@@ -756,11 +817,11 @@ biodataexport_TC<-left_join(lampreyspread_TC,fn125_TC_edit)%>%
 
 biodataexport_TC$CWTAgency = ""
 biodataexport_TC$A1 = 0 #add since there weren't occurrences this year
-biodataexport_TC$A3 = 0 #add since there weren't occurrences this year
-biodataexport_TC$A4 = 0 #add since there weren't occurrences this year
-biodataexport_TC$B1 = 0 #add since there weren't occurrences this year
-biodataexport_TC$B2 = 0 #add since there weren't occurrences this year
-biodataexport_TC$B3 = 0 #add since there weren't occurrences this year
+biodataexport_TC$A3 = 0 
+biodataexport_TC$A4 = 0 
+biodataexport_TC$B1 = 0 
+biodataexport_TC$B2 = 0 
+biodataexport_TC$B3 = 0 
 
 biodataexport_TC_final = biodataexport_TC%>%
   dplyr::select(FishID,
@@ -787,11 +848,11 @@ biodataexport_TC_final = biodataexport_TC%>%
   #                                             '2' = "M",
    #                                            '9' = "U")
 
-#write.csv(biodataexport_TC_final,"./data/TC2/LOA_SC25_TC2_bio.csv")
+#write.csv
 write.csv(biodataexport_TC_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TC2/LOA_SC25_TC2_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#gear table export
 gearexport_TC<-fn121_TC%>%
   dplyr::filter(SAM%in%lampreyspread_TC$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -841,7 +902,8 @@ gearexport_TC<-fn121_TC%>%
   dplyr::rename(Location=SUBSPACE,Latitude=DD_LAT,Longitude=DD_LON,Comments=COMMENT1)
 
 
-#write.csv(gearexport_TC,"./data//LOA_SC25_TC2_gear.csv")
+#write.csv
+
 write.csv(gearexport_TC,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TC2/LOA_SC25_TC2_gear.csv", 
           row.names = FALSE)
 
@@ -851,7 +913,13 @@ fn026_TC_export = fn026_TC %>%
                 SUBSPACE,
                 SUBSPACE_DES)
 
-##################### SLR_THI/LSF - 2025 ############################  #####################################################
+#
+#####################################################################################
+#####################################################################################
+##**                          SLR_THI/LSF                                        **##
+#####################################################################################
+#####################################################################################
+
 #pull in from glis
 Lamprey_SLR <- get_FN125_Lamprey(list(prj_cd=c("SLR_IA25_THI","SLR_IA25_LSF")))
 fn121_SLR <- get_FN121(list(prj_cd=c("SLR_IA25_THI","SLR_IA25_LSF")))
@@ -863,7 +931,7 @@ fn026_SLR = get_FN026_Subspace(list(prj_cd=c("SLR_IA25_THI","SLR_IA25_LSF")))
 #this pulls out the rows with NA values in TLEN 
 SLR_na_rows = fn125_SLR[is.na(fn125_SLR$TLEN),] #24 missing TLEN
 
-#this completely removes the NA values in TLEN 
+#Completely remove the NA values in TLEN 
 fn125_SLR_noNA = fn125_SLR %>%
   filter(!is.na(TLEN))
 
@@ -875,7 +943,7 @@ updated_fn125_SLR = bind_rows(fn125_SLR_noNA, fn125.convert_SLR)
 ##there are six rows that still have NA because there was no FLEN to convert (2025)
 
 #biodataexport
-updated_fn125_SLR<-append.spc.names(updated_fn125_SLR) #if no conversion needed, this would just be fn125
+updated_fn125_SLR<-append.spc.names(updated_fn125_SLR) 
 fn125_SLR_edit<-left_join(updated_fn125_SLR,fn125tags_SLR)
 
 fn125_SLR_edit<-fn125_SLR_edit%>%
@@ -918,13 +986,13 @@ biodataexport_SLR<-left_join(lampreyspread_SLR,fn125_SLR_edit)%>%
                 Comments=COMMENT_LAM) 
 
 biodataexport_SLR$A1 = 0 #add since there weren't occurrences this year
-biodataexport_SLR$A2 = 0 #add since there weren't occurrences this year
-biodataexport_SLR$A3 = 0 #add since there weren't occurrences this year
-biodataexport_SLR$A4 = 0 #add since there weren't occurrences this year
-biodataexport_SLR$B1 = 0 #add since there weren't occurrences this year
-biodataexport_SLR$B2 = 0 #add since there weren't occurrences this year
-biodataexport_SLR$B3 = 0 #add since there weren't occurrences this year
-biodataexport_SLR$B4 = 0 #add since there weren't occurrences this year
+biodataexport_SLR$A2 = 0 
+biodataexport_SLR$A3 = 0 
+biodataexport_SLR$A4 = 0 
+biodataexport_SLR$B1 = 0 
+biodataexport_SLR$B2 = 0 
+biodataexport_SLR$B3 = 0 
+biodataexport_SLR$B4 = 0 
 
 biodataexport_SLR_final = biodataexport_SLR%>%
   dplyr::select(FishID,
@@ -951,12 +1019,12 @@ biodataexport_SLR_final$MaturityAgency = recode(biodataexport_SLR_final$Maturity
                                                '2' = "M",
                                                '9' = "U")
 
-#write.csv(biodataexport_SLR_final,"./data/THI_LSF/SLR_IA25_THI_LSF_bio.csv")
+#write.csv
 write.csv(biodataexport_SLR_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/THI_LSF/SLR_IA25_THI_LSF_bio.csv", 
           row.names = FALSE)
 
 
-#now do "gear" table export
+#gear table export
 tem_SLR<-fn122_SLR%>%
   dplyr::select(PRJ_CD,EFF,SAM,GRTEM0)
 
@@ -1015,7 +1083,8 @@ gearexport_SLR<-fn121_SLR%>%
                 Comments=COMMENT1)
 
 
-#write.csv(gearexport_SLR,"./data/THI_LSF/SLR_IA25_THI_LSF_gear.csv")
+#write.csv
+
 write.csv(gearexport_SLR,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/THI_LSF/SLR_IA25_THI_LSF_gear.csv", 
           row.names = FALSE)
 
@@ -1029,8 +1098,12 @@ write.csv(fn026_SLR, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/THI_
           row.names = FALSE)
 
 
-##################### CF25_003 - 2025 - pull from Data Warehouse - doesn't get put on GLIS ##########################################################
-library(RODBC)
+#
+#####################################################################################
+#####################################################################################
+##**     CF25_003 - 2025 - pull from Data Warehouse - doesn't get put on GLIS    **##
+#####################################################################################
+#####################################################################################
 
 #the connection to the access database will change depending where you store it. I currently have it in my files. 
 LakeTrout_Bycatch_db = "C:/Users/StinsoM/Documents/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/CF_003/LOA_IA25_CF25_003.accdb"
@@ -1041,7 +1114,7 @@ fetch_data <- function(table, prj_cd, LakeTrout_Bycatch_db){
   return(dat)
 }
 
-#load all tables
+#load all tables from the database connection above
 Lamprey_LakeTrout <- fetch_data("FN125_lamprey", params$prj_cd, LakeTrout_Bycatch_db)
 fn121_LakeTrout <- fetch_data("FN121", params$prj_cd, LakeTrout_Bycatch_db)
 fn125_LakeTrout <- fetch_data("FN125", params$prj_cd, LakeTrout_Bycatch_db)
@@ -1136,11 +1209,11 @@ biodataexport_LakeTrout_final$MaturityAgency = recode(biodataexport_LakeTrout_fi
                                                 '2' = "M",
                                                 '9' = "U")
 
-#write.csv(biodataexport_LakeTrout_final,"./data/LOA_CF25_003_bio.csv")
+#write.csv
 write.csv(biodataexport_LakeTrout_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/CF_003/LOA_CF25_003_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#gear table export
 gearexport_LakeTrout<-fn121_LakeTrout%>%
   dplyr::filter(SAM%in%lampreyspread_LakeTrout$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -1192,7 +1265,8 @@ gearexport_LakeTrout<-fn121_LakeTrout%>%
   dplyr::rename(Location=SUBSPACE,Latitude=DD_LAT,Longitude=DD_LON,Comments=COMMENT1)
 
 
-#write.csv(gearexport_LakeTrout,"./data//LOA_CF25_003_gear.csv")
+#write.csv
+
 write.csv(gearexport_LakeTrout,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/CF_003/LOA_CF25_003_gear.csv", 
           row.names = FALSE)
 
@@ -1206,9 +1280,14 @@ write.csv(fn026_LakeTrout, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_202
           row.names = FALSE)
 
 
-##################### CF25_001 - 2025 - pull from Data Warehouse - doesn't get put on GLIS  - ##########################################################
+#
+#####################################################################################
+#####################################################################################
+##**     CF25_001 - 2025 - pull from Data Warehouse - doesn't get put on GLIS    **##
+#####################################################################################
+#####################################################################################
 
-#the connection to the access database will change depending where you store it. I currently have it in my files. 
+#the connection to the access database will change depending where you store it. This is pulling from Datawarehouse
 CommCatch_db = "F:/Data Warehouse/FishNet/LOA/CH1/CF25_001/Data Entry/LOA_CF25_001.accdb"
 fetch_data <- function(table, prj_cd, CommCatch_db){
   DBConnection <- odbcConnectAccess2007(CommCatch_db, uid = "", pwd = "")
@@ -1217,6 +1296,8 @@ fetch_data <- function(table, prj_cd, CommCatch_db){
   return(dat)
 }
 
+#This is a secondary database with the fn121. Most times this is all in one data set.
+#    Check with the lead biologist if all the data is in one data set or if you need a second.
 CommCatch_dbFN121 = "F:/Data Warehouse/FishNet/LOA/CH1/CF25_001/Great_Lakes_Commercial_Catch_Template_0_LOA_CF25_001.accdb"
 fetch_data <- function(table, prj_cd, CommCatch_dbFN121){
   DBConnection <- odbcConnectAccess2007(CommCatch_dbFN121, uid = "", pwd = "")
@@ -1228,7 +1309,7 @@ fetch_data <- function(table, prj_cd, CommCatch_dbFN121){
 
 #load all tables
 Lamprey_CommCatch <- fetch_data("FN125_lamprey", params$prj_cd, CommCatch_db)
-fn121_CommCatch <- fetch_data("FN121", params$prj_cd, CommCatch_dbFN121)
+fn121_CommCatch <- fetch_data("FN121", params$prj_cd, CommCatch_dbFN121) #this one pulls from the second database
 fn125_CommCatch <- fetch_data("FN125", params$prj_cd, CommCatch_db)
 fn125tags_CommCatch <- fetch_data("FN125_tags", params$prj_cd, CommCatch_db) 
 
@@ -1236,7 +1317,7 @@ fn125tags_CommCatch <- fetch_data("FN125_tags", params$prj_cd, CommCatch_db)
 #this pulls out the rows with NA values in TLEN
 CommCatch_na_rows = fn125_CommCatch[is.na(fn125_CommCatch$TLEN),]
 
-#this completely removes the NA values in TLEN 
+#Ccompletely remove the NA values in TLEN 
 fn125_CommCatch_noNA = fn125_CommCatch %>%
   filter(!is.na(TLEN))
 
@@ -1336,11 +1417,11 @@ biodataexport_CommCatch_final$MaturityAgency = recode(biodataexport_CommCatch_fi
                                                       '2' = "M",
                                                       '9' = "U")
 
-#write.csv(biodataexport_CommCatch_final,"./data/LOA_CF25_001_bio.csv")
+#write.csv
 write.csv(biodataexport_CommCatch_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/CF_001/LOA_CF25_001_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#gear table export
 gearexport_CommCatch<-fn121_CommCatch%>%
   dplyr::filter(SAM%in%lampreyspread_CommCatch$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -1396,11 +1477,18 @@ gearexport_CommCatch$Location = recode(gearexport_CommCatch$Location,
                                        '13' = "BOQ",
                                        '12' = "LAKE")
 
-#write.csv(gearexport_CommCatch,"./data//LOA_CF25_001_gear.csv")
+#write.csv
+
 write.csv(gearexport_CommCatch,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/CF_001/LOA_CF25_001_gear.csv", 
           row.names = FALSE)
 
-##################### (need to run still)SC25_002 - 2025 ############################  ##########################################################
+#
+#####################################################################################
+#####################################################################################
+##**                              SC25_002                                       **##
+#####################################################################################
+#####################################################################################
+
 #pull in from glis
 Lamprey_Creel <- get_SC125_Lamprey(list(prj_cd=c("LOA_SC25_002")))
 fn121_Creel <- get_SC121(list(prj_cd=c("LOA_SC25_002")))
@@ -1413,7 +1501,7 @@ Creel_na_rows = fn125_Creel[is.na(fn125_Creel$TLEN),]
 #we didn't take TLEN for Summer Creel
 
 fn125.convert_creel = estimate_tlen2(fn125_Creel, results)
-
+#need to convert all rows so just use fn125_creel 
 
 
 #biodataexport
@@ -1452,11 +1540,11 @@ biodataexport_Creel<-left_join(lampreyspread_Creel,fn125_Creel_edit)%>%
 biodataexport_Creel$CWTAgency = ""
 biodataexport_Creel$A1 = 0 #add since there weren't occurrences this year
 biodataexport_Creel$A2 = 0
-biodataexport_Creel$A3 = 0 #add since there weren't occurrences this year
-biodataexport_Creel$A4 = 0 #add since there weren't occurrences this year
-biodataexport_Creel$B1 = 0 #add since there weren't occurrences this year
-biodataexport_Creel$B2 = 0 #add since there weren't occurrences this year
-biodataexport_Creel$B3 = 0 #add since there weren't occurrences this year
+biodataexport_Creel$A3 = 0 
+biodataexport_Creel$A4 = 0 
+biodataexport_Creel$B1 = 0 
+biodataexport_Creel$B2 = 0 
+biodataexport_Creel$B3 = 0 
 biodataexport_Creel$B4 = 0
 
 biodataexport_Creel_final = biodataexport_Creel%>%
@@ -1480,11 +1568,11 @@ biodataexport_Creel_final = biodataexport_Creel%>%
                 "A1-A3",A1,A2,A3,A4,B1,B2,B3,B4)
 
 
-#write.csv(biodataexport_Creel_final,"./data/SC25_002/LOA_SC25_002_bio.csv")
+#write.csv
 write.csv(biodataexport_Creel_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/SC25_002/LOA_SC25_002_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#gear table export
 gearexport_Creel<-fn121_Creel%>%
   dplyr::filter(SAM%in%lampreyspread_Creel$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -1539,6 +1627,8 @@ write.csv(gearexport_Creel,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_202
           row.names = FALSE)
 
 
+#location reference table
+
 fn026_Creel_export = fn026_creel %>%
   dplyr::select(PRJ_CD,
                 SUBSPACE,
@@ -1548,7 +1638,12 @@ write.csv(fn026_GL1, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/GL1/
           row.names = FALSE)
 
 
-##################### EC1 - pull from Data Warehouse or ask Tom ###########################################################################################################################
+#
+#####################################################################################
+#####################################################################################
+##**                EC1 - pull from Data Warehouse or ask Tom                    **##
+#####################################################################################
+#####################################################################################
 
 #the connection to the access database will change depending where you store it. 
 EC1_db = "F:/Data Warehouse/FishNet/WLO/EC1/SF25_EC1/Data Entry/WLO_SF25_EC1.accdb"
@@ -1662,7 +1757,8 @@ biodataexport_EC1_final$MaturityAgency = recode(biodataexport_EC1_final$Maturity
 write.csv(biodataexport_EC1_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/EC1/LOA_SF25_EC1_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#gear 
+table export
 gearexport_EC1<-fn121_EC1%>%
   dplyr::filter(SAM%in%lampreyspread_EC1$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -1721,7 +1817,12 @@ gearexport_EC1$Location = recode(gearexport_EC1$Location,
 write.csv(gearexport_EC1,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/EC1/LOA_SF25_EC1_gear.csv", 
           row.names = FALSE)
 
-##################### EC2 - pull from Data Warehouse or ask Tom###########################################################################################################################
+#
+#####################################################################################
+#####################################################################################
+##**                EC2 - pull from Data Warehouse or ask Tom                    **##
+#####################################################################################
+#####################################################################################
 
 #the connection to the access database will change depending where you store it. 
 EC2_db = "F:/Data Warehouse/FishNet/WLO/EC1/SF25_EC2/WLO_SF25_EC2/database/WLO_SF25_EC2_WO_AGES.accdb"
@@ -1739,7 +1840,7 @@ fn121_EC2 <- fetch_data("FN121", params$prj_cd, EC2_db)
 fn125_EC2 <- fetch_data("FN125", params$prj_cd, EC2_db)
 fn125tags_EC2 <- fetch_data("FN125_tags", params$prj_cd, EC2_db) #no tags present
 
-#fn125 and lamprey tables gave the SAM column leading zeros and this just removes that
+#some tables gave the SAM column leading zeros and this just removes that
 fn125_EC2$SAM <- as.numeric(fn125_EC2$SAM)
 Lamprey_EC2$SAM = as.numeric(Lamprey_EC2$SAM)
 fn121_EC2$SAM = as.numeric(fn121_EC2$SAM)
@@ -1842,7 +1943,7 @@ biodataexport_EC2_final$MaturityAgency = recode(biodataexport_EC2_final$Maturity
 write.csv(biodataexport_EC2_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/EC2/LOA_SF25_EC2_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#gear table export
 gearexport_EC2<-fn121_EC2%>%
   dplyr::filter(SAM%in%lampreyspread_EC2$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -1902,7 +2003,14 @@ write.csv(gearexport_EC2,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/
           row.names = FALSE)
 
 
-##################### WGS - pull from Data Warehouse or ask Tom##########################################################################################################################
+#
+
+#####################################################################################
+#####################################################################################
+##**                WGS - pull from Data Warehouse or ask Tom                    **##
+#####################################################################################
+#####################################################################################
+
 #the connection to the access database will change depending where you store it. 
 WGS_db = "F:/Data Warehouse/FishNet/LOA/WGS/IA25_WGS/GLAT5_LOA_IA25_WGS.accdb"
 fetch_data <- function(table, prj_cd, WGS_db){
@@ -1919,7 +2027,7 @@ fn121_WGS <- fetch_data("FN121", params$prj_cd, WGS_db)
 fn125_WGS <- fetch_data("FN125", params$prj_cd, WGS_db)
 fn125tags_WGS <- fetch_data("FN125_tags", params$prj_cd, WGS_db) #no tags present
 
-#fn125 table gave the SAM column leading zeros and this just removes that
+#some of the tables gave the SAM column leading zeros and this just removes that
 fn125_WGS$SAM <- as.numeric(fn125_WGS$SAM)
 Lamprey_WGS$SAM <- as.numeric(Lamprey_WGS$SAM)
 fn121_WGS$SAM <- as.numeric(fn121_WGS$SAM)
@@ -2014,7 +2122,8 @@ biodataexport_WGS_final$MaturityAgency = recode(biodataexport_WGS_final$Maturity
 write.csv(biodataexport_WGS_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/WGS/LOA_IA25_WGS_bio.csv", 
           row.names = FALSE)
 
-#now do "gear" table export
+#gear 
+table export
 gearexport_WGS<-fn121_WGS%>%
   dplyr::filter(SAM%in%lampreyspread_WGS$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -2074,10 +2183,14 @@ gearexport_WGS$Location = recode(gearexport_WGS$Location,
 write.csv(gearexport_WGS,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/WGS/LOA_IA25_WGS_gear.csv", 
           row.names = FALSE)
 
-#####################################################################################################################################################
+#
+#####################################################################################
+#####################################################################################
+##**                            Final Export                                     **##
+#####################################################################################
+#####################################################################################
 
-
-
+# Combine all the bioexports 
 bioexportcompile = bind_rows(biodataexport1,
                          biodataexport_trawl2,
                          biodataexport_NSCIN_final,
@@ -2092,8 +2205,7 @@ bioexportcompile = bind_rows(biodataexport1,
                          biodataexport_WGS_final)
 
 #because some of the files don't have CWTAgency when you bind the rows it adds it to the end
-#this just reorganizes it. 
-
+#    this just reorganizes it. 
 bioexportcompile_final = bioexportcompile%>%
   dplyr::select(FishID,
                 LiftID,
@@ -2113,6 +2225,7 @@ bioexportcompile_final = bioexportcompile%>%
                 FinClipAgency,
                 "A1-A3",A1,A2,A3,A4,B1,B2,B3,B4)
 
+# Combine all the gear exports
 gearexportcompile = bind_rows(gearexport1,
                           gearexport_trawl,
                           gearexport_NSCIN,
@@ -2126,6 +2239,7 @@ gearexportcompile = bind_rows(gearexport1,
                           gearexport_EC2,
                           gearexport_WGS)
 
+# Combine all the Location exports
 locationcompile = bind_rows(fn026_GL1,
                             fn026_trawl,
                             fn026_NSCIN,
@@ -2135,17 +2249,25 @@ locationcompile = bind_rows(fn026_GL1,
                             fn026_LakeTrout,
                             fn026_Creel_export)
 
+# Rename the columns
 locationcompile_final = locationcompile %>%
   rename("Project Code" = PRJ_CD,
          "Location" = SUBSPACE,
          "Location Description" = SUBSPACE_DES)
                             
 
+# Export the three csv to three separate excel books
 write_xlsx(bioexportcompile_final,"C:/Users/StinsoM/Documents/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/MNR_SeaLamprey_Biodata.xlsx")
 write_xlsx(gearexportcompile,"C:/Users/StinsoM/Documents/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/MNR_gear.xlsx")
 write_xlsx(locationcompile_final, "C:/Users/StinsoM/Documents/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/locations.xlsx")
 
-#manually combined the biodata, gear, and locations into a single file with three sheets
-#added a codereference sheet for maturity/age structure if needed
-#The location file will have to be edited manually to remove some of the information in 
-#the description to make it clear and concise. 
+# It's easiest to manually combine the biodata, gear, and location into a single file
+#     with three sheets. You can also include a code reference sheet for maturity
+#     and age structures. There's one in the 2025 final excel. Just copy that into 
+#     the 2026 export.
+
+#The location file will have to be edited manually to remove some of the information 
+#     in the description to make it clear and concise. The export will also include
+#     some sites that were visited (Trawl). You'll have to manually remove those.
+#     Use the 2025 file for reference and feel free to edit as you wish. This isn't
+#     a requirement for the data request it's just helpful. 

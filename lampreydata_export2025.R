@@ -1,10 +1,11 @@
 #####################################################################################
 #####################################################################################
-##**                          Lamprey data request                               **##
+#**                           Lamprey data request                                **#
 ##**                             February 2025                                   **##
 ##**            Mikayla Stinson, original codes from McKayla Jarvie              **##
 #####################################################################################
 #####################################################################################
+#Foreward ----
 
 #In the past there were issues with duplicates due to the tag tables. There were no 
 #    tags recorded in 2025 so I didn't run into this issue. If tags are present for
@@ -21,6 +22,7 @@
 ##**                           Packages to Load                                  **##
 #####################################################################################
 #####################################################################################
+#Packages to Load ----
 
 # Install the development version from GitHub
 # 1) Base data tools
@@ -53,6 +55,7 @@ library(writexl)
 ##**                         FLEN to TLEN conversions                            **##
 #####################################################################################
 #####################################################################################
+#Conversions ----
 #see if lko coefficients are different from whole lake attributes
 
 #whole lake
@@ -106,13 +109,13 @@ estimate_tlen2 <- function(GL1na_rows, results) {
   return(GL1na_rows)
 }
 
-
 #
 #####################################################################################
 #####################################################################################
 ##**                                  GL1                                        **##
 #####################################################################################
 #####################################################################################
+#GL1 ----
 
 #pull in from GLIS
 Lamprey <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_GL1")))
@@ -232,9 +235,12 @@ gearexport1<-fn121%>%
   dplyr::select(c(LiftID,Lake,Agency,SUBSPACE,DD_LAT0,DD_LON0,MU,Grid,Year,Month,Day,SurveyType,SurveyDescription,Gear,Nights,NetMaterial,MinMeshmm,MaxMeshmm,GRDEPMIN,GRDEPMAX,GRDEPMID,BottomTempC,SITEM0,COMMENT1))%>%
   dplyr::rename(Location=SUBSPACE,Latitude=DD_LAT0,Longitude=DD_LON0,Depth1m=GRDEPMIN,Depth2m=GRDEPMAX,AvgDepthm=GRDEPMID,SurfaceTempC=SITEM0,Comments=COMMENT1)
 
+#use this to sort duplicates out of the table. If you don't run this you'll have 1000 extra entries
+gearexport_GL1 = gearexport1[!duplicated(gearexport1),]
+
 #write.csv
 
-write.csv(gearexport1,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/GL1/LOA_IA25_GL1_gear.csv", 
+write.csv(gearexport_GL1,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/GL1/LOA_IA25_GL1_gear_2.csv", 
           row.names = FALSE)
 
 #Location reference sheet
@@ -253,6 +259,7 @@ write.csv(fn026_GL1, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/GL1/
 ##**                                  TW1                                        **##
 #####################################################################################
 #####################################################################################
+#TW1 ----
 
 #pull in from glis
 Lamprey_trawl <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_TW1")))
@@ -353,7 +360,7 @@ write.csv(biodataexport_trawl2,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey
           row.names = FALSE)
 
 
-#"gear" table export
+#gear table export
 tem<-fn122_trawl%>%dplyr::select(PRJ_CD,EFF,SAM,GRTEM0)
 
 fn121_trawl<-left_join(fn121_trawl,tem)%>%dplyr::rename(BottomTempC=GRTEM0)
@@ -427,6 +434,7 @@ write.csv(fn026_trawl, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW
 ##**                            NSH/NSW/NSE/NSA                                  **##
 #####################################################################################
 #####################################################################################
+#NSCIN ----
 
 #pull in from glis
 Lamprey_NSCIN <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_NSH","LOA_IA25_NSW","LOA_IA25_NSE","LOA_IA25_NSA")))
@@ -526,7 +534,7 @@ biodataexport_NSCIN_final$MaturityAgency = recode(biodataexport_NSCIN_final$Matu
 write.csv(biodataexport_NSCIN_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/NSCIN/LOA_IA25_NSH_NSW_NSE_NSA_bio.csv", 
           row.names = FALSE)
 
-#"gear" table export
+#gear table export
 tem2<-fn122_NSCIN%>%dplyr::select(PRJ_CD,EFF,SAM,GRTEM0)
 fn121_NSCIN<-left_join(fn121_NSCIN,tem2)%>%dplyr::rename(BottomTempC=GRTEM0)
 gearexport_NSCIN<-fn121_NSCIN%>%dplyr::filter(SAM%in%NSCIN_lampreyspread$SAM)%>%
@@ -599,6 +607,7 @@ write.csv(fn026_NSCIN, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/NS
 ##**                  TW2/TW4 - Still need fall trawl 2025                       **##
 #####################################################################################
 #####################################################################################
+#TW2/TW4 ----
 
 #pull in from glis
 Lamprey_TW <- get_FN125_Lamprey(list(prj_cd=c("LOA_IA25_TW2","LOA_IA25_TW4")))
@@ -696,7 +705,7 @@ biodataexport_TW_final = biodataexport_TW%>%
 write.csv(biodataexport_TW_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW2_TW4/LOA_IA25_TW2_TW4_bio.csv", 
           row.names = FALSE)
 
-#"gear" table export
+#gear table export
 tem_TW<-fn122_TW%>%
   dplyr::select(PRJ_CD,EFF,SAM,GRTEM0)
 
@@ -752,7 +761,7 @@ gearexport_TW<-fn121_TW%>%
                 SurfaceTempC=SITEM0,
                 Comments=COMMENT1)
 
-#write.csv(gearexport_TW,"./data/TW2_TW4/LOA_IA25_TW2_TW4_gear.csv"))
+#write.csv
 write.csv(gearexport_TW,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW2_TW4/LOA_IA25_TW2_TW4_gear.csv", 
           row.names = FALSE)
 
@@ -771,6 +780,7 @@ write.csv(fn026_TW, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/TW2_T
 ##**                              TC2                                            **##
 #####################################################################################
 #####################################################################################
+#TC2 ----
 
 #pull in from glis
 Lamprey_TC <- get_SC125_Lamprey(list(prj_cd=c("LOA_SC25_TC2")))
@@ -919,6 +929,7 @@ fn026_TC_export = fn026_TC %>%
 ##**                          SLR_THI/LSF                                        **##
 #####################################################################################
 #####################################################################################
+#SLR THI/LSF ----
 
 #pull in from glis
 Lamprey_SLR <- get_FN125_Lamprey(list(prj_cd=c("SLR_IA25_THI","SLR_IA25_LSF")))
@@ -947,7 +958,7 @@ updated_fn125_SLR<-append.spc.names(updated_fn125_SLR)
 fn125_SLR_edit<-left_join(updated_fn125_SLR,fn125tags_SLR)
 
 fn125_SLR_edit<-fn125_SLR_edit%>%
-  dplyr::select(PRJ_CD,SAM,EFF,GRP,SPC,SPC_NM,FISH,TLEN,RWT,AGEST,SEX,MAT,CLIPC,TAGID) 
+  dplyr::select(PRJ_CD,SAM,EFF,GRP,SPC,SPC_NM,FISH,TLEN,RWT,AGEST,SEX,MAT,FATE,CLIPC,TAGID) 
 
 lampreyspread_SLR<-Lamprey_SLR%>%
   group_by(PRJ_CD,
@@ -964,13 +975,14 @@ lampreyspread_SLR<-Lamprey_SLR%>%
          Lake="Ontario",
          Agency="OMNR",
          FishID = paste(LiftID,SPC,FISH,sep="_"),
-         "R/D"="D","A1-A3" = 0) #no A1/A2/A3 present this year, otherwise A1+A2+A3
+         "A1-A3" = 0) #no A1/A2/A3 present this year, otherwise A1+A2+A3
 
 biodataexport_SLR<-left_join(lampreyspread_SLR,fn125_SLR_edit)%>%
   dplyr::mutate(EFF=as.numeric(EFF),
                 SPC=as.numeric(SPC),
                 SEX=ifelse(SEX==1,"M","F"),
                 SEX=ifelse(SEX==9,"U",SEX),
+                FATE=ifelse(FATE == "R", "R", ifelse(FATE == "K", "D", NA)),
                 Age="",SpeciesAbbrev="")%>%
   dplyr::select(!c(PRJ_CD,SAM,FISH,GRP,`0`))%>%
   dplyr::rename(MaturityAgency=MAT,
@@ -979,6 +991,7 @@ biodataexport_SLR<-left_join(lampreyspread_SLR,fn125_SLR_edit)%>%
                 SpeciesName=SPC_NM,
                 "Length(mm)"=TLEN,
                 "Weight(g)"=RWT,
+                "R/D" = FATE,
                 FinClipAgency=CLIPC,
                 AgeStructure=AGEST,
                 SexAgency=SEX,
@@ -1082,6 +1095,8 @@ gearexport_SLR<-fn121_SLR%>%
                 SurfaceTempC=SITEM0,
                 Comments=COMMENT1)
 
+#use to remove duplicates
+gearexport_SLR = gearexport_SLR[!duplicated(gearexport_SLR),]
 
 #write.csv
 
@@ -1104,6 +1119,7 @@ write.csv(fn026_SLR, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/THI_
 ##**     CF25_003 - 2025 - pull from Data Warehouse - doesn't get put on GLIS    **##
 #####################################################################################
 #####################################################################################
+#CF_003 ----
 
 #the connection to the access database will change depending where you store it. I currently have it in my files. 
 LakeTrout_Bycatch_db = "C:/Users/StinsoM/Documents/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/CF_003/LOA_IA25_CF25_003.accdb"
@@ -1286,6 +1302,7 @@ write.csv(fn026_LakeTrout, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_202
 ##**     CF25_001 - 2025 - pull from Data Warehouse - doesn't get put on GLIS    **##
 #####################################################################################
 #####################################################################################
+#CF_001 ----
 
 #the connection to the access database will change depending where you store it. This is pulling from Datawarehouse
 CommCatch_db = "F:/Data Warehouse/FishNet/LOA/CH1/CF25_001/Data Entry/LOA_CF25_001.accdb"
@@ -1488,6 +1505,7 @@ write.csv(gearexport_CommCatch,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey
 ##**                              SC25_002                                       **##
 #####################################################################################
 #####################################################################################
+#SC_002 ----
 
 #pull in from glis
 Lamprey_Creel <- get_SC125_Lamprey(list(prj_cd=c("LOA_SC25_002")))
@@ -1622,7 +1640,7 @@ gearexport_Creel<-fn121_Creel%>%
   dplyr::rename(Location=SUBSPACE,Latitude=DD_LAT,Longitude=DD_LON,Comments=COMMENT1)
 
 
-#write.csv(gearexport_Creel,"./data//LOA_SC25_002_gear.csv")
+#write.csv
 write.csv(gearexport_Creel,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/SC25_002/LOA_SC25_002_gear.csv", 
           row.names = FALSE)
 
@@ -1644,6 +1662,7 @@ write.csv(fn026_GL1, "~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/GL1/
 ##**                EC1 - pull from Data Warehouse or ask Tom                    **##
 #####################################################################################
 #####################################################################################
+#EC1 ----
 
 #the connection to the access database will change depending where you store it. 
 EC1_db = "F:/Data Warehouse/FishNet/WLO/EC1/SF25_EC1/Data Entry/WLO_SF25_EC1.accdb"
@@ -1757,8 +1776,7 @@ biodataexport_EC1_final$MaturityAgency = recode(biodataexport_EC1_final$Maturity
 write.csv(biodataexport_EC1_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/EC1/LOA_SF25_EC1_bio.csv", 
           row.names = FALSE)
 
-#gear 
-table export
+#gear table export
 gearexport_EC1<-fn121_EC1%>%
   dplyr::filter(SAM%in%lampreyspread_EC1$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -1823,6 +1841,7 @@ write.csv(gearexport_EC1,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/
 ##**                EC2 - pull from Data Warehouse or ask Tom                    **##
 #####################################################################################
 #####################################################################################
+#EC2 ----
 
 #the connection to the access database will change depending where you store it. 
 EC2_db = "F:/Data Warehouse/FishNet/WLO/EC1/SF25_EC2/WLO_SF25_EC2/database/WLO_SF25_EC2_WO_AGES.accdb"
@@ -2010,6 +2029,7 @@ write.csv(gearexport_EC2,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/
 ##**                WGS - pull from Data Warehouse or ask Tom                    **##
 #####################################################################################
 #####################################################################################
+#WGS ----
 
 #the connection to the access database will change depending where you store it. 
 WGS_db = "F:/Data Warehouse/FishNet/LOA/WGS/IA25_WGS/GLAT5_LOA_IA25_WGS.accdb"
@@ -2122,8 +2142,7 @@ biodataexport_WGS_final$MaturityAgency = recode(biodataexport_WGS_final$Maturity
 write.csv(biodataexport_WGS_final,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/WGS/LOA_IA25_WGS_bio.csv", 
           row.names = FALSE)
 
-#gear 
-table export
+#gear table export
 gearexport_WGS<-fn121_WGS%>%
   dplyr::filter(SAM%in%lampreyspread_WGS$SAM)%>%
   dplyr::mutate(LiftID=paste("OMNR",PRJ_CD,SAM,sep="_"),
@@ -2189,6 +2208,7 @@ write.csv(gearexport_WGS,"~/Program Folders (R etc)/Sea Lamprey/SeaLamprey_2025/
 ##**                            Final Export                                     **##
 #####################################################################################
 #####################################################################################
+#Export ----
 
 # Combine all the bioexports 
 bioexportcompile = bind_rows(biodataexport1,
@@ -2226,7 +2246,7 @@ bioexportcompile_final = bioexportcompile%>%
                 "A1-A3",A1,A2,A3,A4,B1,B2,B3,B4)
 
 # Combine all the gear exports
-gearexportcompile = bind_rows(gearexport1,
+gearexportcompile = bind_rows(gearexport_GL1,
                           gearexport_trawl,
                           gearexport_NSCIN,
                           gearexport_TW,
@@ -2268,6 +2288,6 @@ write_xlsx(locationcompile_final, "C:/Users/StinsoM/Documents/Program Folders (R
 
 #The location file will have to be edited manually to remove some of the information 
 #     in the description to make it clear and concise. The export will also include
-#     some sites that were visited (Trawl). You'll have to manually remove those.
+#     some sites that weren't visited (Trawl). You'll have to manually remove those.
 #     Use the 2025 file for reference and feel free to edit as you wish. This isn't
 #     a requirement for the data request it's just helpful. 

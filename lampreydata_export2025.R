@@ -12,7 +12,8 @@
 #    2026 programs then this is something to be aware of. This occurs because of the
 #    way fn125 table is merged with the fn125_tags table. May be able to work this 
 #    out within the code or may have to manually check the excel export. 
-
+#I did run into some duplicates for the gear tables. I included a duplicate line
+#   in the gillnetting programs where this seems to occur. 
 
 #You'll have to adjust the code to remove/add projects for 2026. 
 
